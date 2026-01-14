@@ -1,592 +1,554 @@
 /* CSS Reset - Basic Styling Normalization */
-/* Reset all elements to remove default browser margins and padding */
 * {
-    margin: 0;          /* Remove default margin from all elements */
-    padding: 0;         /* Remove default padding from all elements */
-    box-sizing: border-box; /* Include padding and border in element's total width/height */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Body Styling - Page Background and Typography */
 body {
-    /* Font family stack for cross-browser compatibility */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    /* Gradient background from purple to blue */
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-
-    /* Minimum height of 100% of viewport height */
     min-height: 100vh;
-
-    /* Padding around the entire page */
     padding: 20px;
 }
 
-
 /* Main Container - Centered Context Box */
 .container {
-    max-width: 600px;           /* Maximum width of the content */
-    margin: 0 auto;             /* Center horizontally: 0 top/bottom, auto left/right */
-    background: white;          /* White background for content */
-    border-radius: 15px;        /* Rounded corners */
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1); /* Shadow for depth effect */
-    overflow: hidden;           /* Hide any content that overflows the container */
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 /* Header Section - Title and Description */
 header {
-    background: #2c3e50;        /* Dark blue background */
-    color: white;               /* White text color */
-    padding: 10px;              /* Space inside header */
-    text-align: center;         /* Center align text */
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    text-align: center;
 }
 
-/* Application icon styling */
 .title-icon {
-    width: 40px;                /* Fixed width */
-    height: 40px;               /* Fixed height */
-    vertical-align: middle;     /* Align with text baseline */
-    margin-right: 5px;         /* Space between icon and text */
-    border-radius: 5px;         /* Slightly rounded corners */
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 5px;
 }
 
-/* Main title styling */
 header h1 {
-    font-size: 2.5em;           /* Large font size (2.5 times normal) */
-    margin-bottom: 5px;         /* Space below title */
+    font-size: 2.5em;
+    margin-bottom: 5px;
 }
 
-/* Subtitle/description styling */
 header p {
-    opacity: 0.8;               /* Slightly transparent text */
-    font-size: 1.1em;           /* Slightly larger than normal text */
+    opacity: 0.8;
+    font-size: 1.1em;
 }
 
 /* Password Generator Card - Main Interface */
 .generator-card {
-    padding: 30px 30px 15px 30px; /* Space inside the card */
+    padding: 30px 30px 15px 30px;
 }
 
-/* Input group container */
 .input-group {
-    margin-bottom: 20px;        /* Space below input group */
+    margin-bottom: 20px;
 }
 
-/* Form label styling */
 label {
-    display: block;             /* Make label take full width */
-    margin-bottom: 8px;         /* Space below label */
-    font-weight: 600;           /* Semi-bold text */
-    color: #2c3e50;             /* Dark blue text color */
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
 }
 
-/* Number input field styling */
 input[type="number"] {
-    width: 100%;                /* Full width of container */
-    padding: 12px;              /* Space inside input */
-    border: 2px solid #ddd;     /* Light gray border */
-    border-radius: 8px;         /* Rounded corners */
-    font-size: 16px;            /* Comfortable font size */
-    margin-bottom: 15px;        /* Space below input */
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
-
 
 /* Button Styling - Interactive Elements */
 button {
-    background: #3498db;        /* Blue background */
-    color: white;               /* White text */
-    border: none;               /* Remove default border */
-    padding: 12px 24px;         /* Vertical and horizontal padding */
-    border-radius: 8px;         /* Rounded corners */
-    cursor: pointer;            /* Show hand cursor on hover */
-    font-size: 16px;            /* Comfortable font size */
-    transition: background 0.3s; /* Smooth color transition */
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
 }
 
-/* Button hover effect */
 button:hover {
-    background: #2980b9;        /* Darker blue on hover */
+    background: #2980b9;
 }
 
-/* Disabled button styling */
 button:disabled {
-    background: #bdc3c7;        /* Gray background when disabled */
-    cursor: not-allowed;        /* Show disabled cursor */
+    background: #bdc3c7;
+    cursor: not-allowed;
 }
-
 
 /* Password Display Section */
 .password-display {
-    display: flex;              /* Use flexbox for layout */
-    gap: 10px;                  /* Space between elements */
-    margin-bottom: 15px;        /* Space below display */
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
-/* Password output field */
 #passwordOutput {
-    flex: 1;                    /* Take remaining space */
-    padding: 12px;              /* Space inside field */
-    border: 2px solid #ddd;     /* Light gray border */
-    border-radius: 8px;         /* Rounded corners */
-    font-size: 16px;            /* Comfortable font size */
-    font-family: 'Courier New', monospace; /* Monospace font for passwords */
-    background: #f8f9fa;        /* Light gray background */
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Courier New', monospace;
+    background: #f8f9fa;
 }
 
-/* Copy button specific styling */
 #copyBtn {
-    background: #27ae60;        /* Green background */
+    background: #27ae60;
 }
 
 #copyBtn:hover {
-    background: #219a52;        /* Darker green on hover */
+    background: #219a52;
 }
 
 /* Password Information Section */
 .password-info {
-    display: flex;                  /* Use flexbox for layout */
-    justify-content: space-between; /* Space elements evenly */
-    font-size: 0.9em;              /* Slightly smaller text */
-    color: #7f8c8d;                /* Gray text color */
-    margin-bottom: 10px;           /* Space below info */
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-bottom: 10px;
 }
 
 /* Examples and API Info Sections - "Built with Python Flask and Social Media Icons"*/
 .examples, .api-info {
-    background: #f8f9fa;        /* Light gray background */
-    padding: 10px;              /* Space inside */
-    border-radius: 6px;         /* Rounded corners */
-    margin-bottom: 8px;        /* Space below */
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
 }
 
 .examples h3, .api-info h3 {
-    margin-bottom: 7px;         /* Space below headings */
-    color: #2c3e50;             /* Dark blue text */
+    margin-bottom: 7px;
+    color: #2c3e50;
 }
 
-/* Code block styling */
 code {
-    background: #2c3e50;        /* Dark blue background */
-    color: white;               /* White text */
-    padding: 5px 10px;          /* Space inside */
-    border-radius: 4px;         /* Rounded corners */
-    font-family: 'Courier New', monospace; /* Monospace font */
+    background: #2c3e50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
 }
 
-/* Unordered list styling */
 ul {
-    margin-left: 20px;          /* Indent list */
-    margin-top: 10px;           /* Space above list */
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
 /* Footer Styling */
 footer {
-    background: #ecf0f1;        /* Light gray background */
-    text-align: center;         /* Center align content */
-    padding: 8px 10px;          /* Space inside footer */
-    color: #7f8c8d;             /* Gray text color */
+    background: #ecf0f1;
+    text-align: center;
+    padding: 8px 10px;
+    color: #7f8c8d;
 }
-
 
 /* Responsive Design - Mobile Styles */
 @media (max-width: 600px) {
-    /* Adjust container for small screens */
     .container {
-        margin: 10px;           /* Smaller margins */
-        border-radius: 10px;    /* Slightly smaller rounded corners */
+        margin: 10px;
+        border-radius: 10px;
     }
 
-    /* Stack password display vertically on mobile */
     .password-display {
-        flex-direction: column; /* Change to vertical layout */
+        flex-direction: column;
     }
 }
 
 /* Social Links Styling */
 .social-links {
-    display: flex;                  /* Use flexbox for layout */
-    justify-content: center;        /* Center horizontally */
-    align-items: center;            /* Center vertically */
-    gap: 10px;                      /* Space between icons */
-    margin: 15px 0;                 /* Vertical margin */
-    padding: 0px;                  /* Space inside */
-    background: #f8f9fa;            /* Light gray background */
-    border-radius: 10px;            /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 0px;
+    background: #f8f9fa;
+    border-radius: 10px;
 }
 
 .social-link {
-    display: inline-block;          /* Inline block element */
-    transition: all 0.3s ease;      /* Smooth transitions */
-    padding: 8px;                   /* Space around icon */
-    border-radius: 8px;             /* Rounded corners */
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);            /* White background */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+    display: inline-block;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     position: relative;
 }
 
 .social-link:hover {
-    transform: translateY(-3px);    /* Same lift effect as language links */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Same shadow as language links */
-    border-color: #007bff;    /* Blue border like language links */
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); /* Same gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-color: #007bff;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
 }
 
 .social-icon {
-    width: 26px;                    /* Fixed width */
-    height: 26px;                   /* Fixed height */
-    display: block;                 /* Block display to remove extra space */
-    border-radius: 3px;             /* Slightly rounded corners */
+    width: 26px;
+    height: 26px;
+    display: block;
+    border-radius: 3px;
 }
 
-/* Tooltip Styling for Social Links */
 .social-link {
-    position: relative; /* Needed for tooltip positioning */
+    position: relative;
 }
 
 .social-link:hover::after {
-    content: attr(data-tooltip);    /* Get text from data-tooltip attribute */
-    position: absolute;             /* Position relative to parent */
-    bottom: -35px;                  /* Position below the icon */
-    left: 50%;                      /* Center horizontally */
-    transform: translateX(-50%);    /* Perfect horizontal centering */
-    background: #333;               /* Dark background color */
-    color: white;                   /* White text color */
-    padding: 5px 10px;              /* Internal spacing */
-    border-radius: 4px;             /* Rounded corners */
-    font-size: 0.8em;               /* Smaller text size */
-    white-space: nowrap;            /* Prevent text wrapping */
-    z-index: 1000;                  /* Ensure tooltip appears above other elements */
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 1000;
 }
 
-/* Tooltip arrow for social links */
 .social-link:hover::before {
-    content: '';                    /* Empty content for pseudo-element */
-    position: absolute;             /* Position relative to parent */
-    bottom: -5px;                   /* Position just below tooltip */
-    left: 50%;                      /* Center horizontally */
-    transform: translateX(-50%);    /* Perfect horizontal centering */
-    border-width: 5px;              /* Size of the arrow */
-    border-style: solid;            /* Solid border style */
-    border-color: transparent transparent #333 transparent; /* CSS triangle pointing down */
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
 }
 
 /* API Info Specific Styling */
 .api-info {
-    background: #f8f9fa;        /* Light gray background */
-    padding: 10px;              /* Compact padding */
-    border-radius: 5px;         /* Rounded corners */
-    margin: 2px 0;              /* Minimal margin */
-    border-left: 4px solid #3498db; /* Blue left border */
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 2px 0;
+    border-left: 4px solid #3498db;
 }
 
 .http-method {
-    background: #28a745;        /* Green background */
-    color: white;               /* White text */
-    padding: 2px 6px;           /* Compact padding */
-    border-radius: 3px;         /* Rounded corners */
-    font-weight: bold;          /* Bold text */
+    background: #28a745;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-weight: bold;
 }
 
 .api-endpoint {
-    font-family: 'Courier New', monospace; /* Monospace font */
-    background: #2c3e50;        /* Dark blue background */
-    color: white;               /* White text */
-    padding: 5px 10px;          /* Space inside */
-    border-radius: 5px;         /* Rounded corners */
+    font-family: 'Courier New', monospace;
+    background: #2c3e50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .api-description {
-    font-size: 0.9em;           /* Slightly smaller text */
-    color: #666;                /* Gray text color */
-    margin-top: 8px;            /* Space above description */
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 8px;
 }
 
 /* Password Strength Indicator */
 .password-strength {
-    margin: 5px 0;              /* Minimal vertical margin */
-    padding: 6px;               /* Compact padding */
-    background: #f8f9fa;        /* Light gray background */
-    border-radius: 8px;         /* Rounded corners */
-    border-left: 4px solid #6c757d; /* Gray left border */
+    margin: 5px 0;
+    padding: 6px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #6c757d;
 }
 
 .strength-header {
-    display: flex;                  /* Use flexbox for layout */
-    justify-content: space-between; /* Space elements evenly */
-    align-items: center;            /* Center vertically */
-    margin-bottom: 10px;            /* Space below header */
-    font-weight: 600;               /* Semi-bold text */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 .strength-bar {
-    width: 100%;                /* Full width */
-    height: 8px;                /* Fixed height */
-    background: #e9ecef;        /* Light gray background */
-    border-radius: 4px;         /* Rounded corners */
-    overflow: hidden;           /* Hide overflow */
-    margin-bottom: 8px;         /* Space below bar */
+    width: 100%;
+    height: 8px;
+    background: #e9ecef;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 8px;
 }
 
 .strength-meter {
-    height: 100%;               /* Full height of container */
-    width: 0%;                  /* Start with 0 width */
-    border-radius: 4px;         /* Rounded corners */
-    transition: all 0.3s ease;  /* Smooth transitions */
+    height: 100%;
+    width: 0%;
+    border-radius: 4px;
+    transition: all 0.3s ease;
 }
 
-/* Weak password styling */
 .strength-weak .strength-meter {
-    background: #dc3545;        /* Red color */
-    width: 33%;                 /* 33% width for weak */
+    background: #dc3545;
+    width: 33%;
 }
 
-/* Medium password styling */
 .strength-medium .strength-meter {
-    background: #ffc107;        /* Yellow color */
-    width: 66%;                 /* 66% width for medium */
+    background: #ffc107;
+    width: 66%;
 }
 
-/* Strong password styling */
 .strength-strong .strength-meter {
-    background: #28a745;        /* Green color */
-    width: 100%;                /* 100% width for strong */
+    background: #28a745;
+    width: 100%;
 }
 
-/* Strength text colors */
-.strength-weak #strengthText { color: #dc3545; }    /* Red text */
-.strength-medium #strengthText { color: #ffc107; }  /* Yellow text */
-.strength-strong #strengthText { color: #28a745; }  /* Green text */
+.strength-weak #strengthText { color: #dc3545; }
+.strength-medium #strengthText { color: #ffc107; }
+.strength-strong #strengthText { color: #28a745; }
 
 .strength-details {
-    font-size: 0.8em;           /* Small text */
-    color: #6c757d;             /* Gray text color */
-    margin-top: 5px;            /* Space above details */
+    font-size: 0.8em;
+    color: #6c757d;
+    margin-top: 5px;
 }
 
-/* Strength criteria items */
 .strength-criteria {
-    display: flex;              /* Use flexbox for layout */
-    align-items: center;        /* Center vertically */
-    gap: 5px;                   /* Space between icon and text */
-    margin: 2px 0;              /* Minimal vertical margin */
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 2px 0;
 }
 
-.criteria-met { color: #28a745; }      /* Green for met criteria */
-.criteria-missing { color: #dc3545; }  /* Red for missing criteria */
+.criteria-met { color: #28a745; }
+.criteria-missing { color: #dc3545; }
 
 /* Language Selection Section */
 .language-section {
-    margin-top: 5px;               /* Space above section */
-    padding-top: 8px;              /* Space inside top */
-    padding-bottom: 8px;           /* Added bottom padding for balance */
-    border-top: 1px solid #e9ecef;  /* Top border line */
-    text-align: center;             /* Center align content */
-    background: #f8f9fa;            /* Light gray background */
-    border-radius: 8px;             /* Rounded corners */
-    margin-top: 1px;                /* Top margin override */
-    margin-bottom: 8px;             /* Bottom margin for spacing */
-    margin-left: 0;                 /* No left margin */
-    margin-right: 0;                /* No right margin */
+    margin-top: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 8px;
+    margin-top: 1px;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .language-label {
-    font-size: 0.9em;               /* Slightly smaller text */
-    color: #6c757d;                 /* Gray text color */
-    margin-bottom: 10px;            /* Space below label */
-    font-weight: 600;               /* Semi-bold text */
-    text-transform: uppercase;      /* Uppercase text */
-    letter-spacing: 1px;            /* Space between letters */
+    font-size: 0.9em;
+    color: #6c757d;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .language-links {
     position: relative;
     z-index: 10;
-    display: flex;                  /* Use flexbox for layout */
-    justify-content: center;        /* Center horizontally */
-    align-items: center;            /* Center vertically */
-    gap: 15px;                      /* Space between flags */
-    padding: 0 10px;                /* Added horizontal padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0 10px;
 }
 
 .language-link {
-    display: flex;                  /* Use flexbox for layout */
-    flex-direction: column;         /* Stack items vertically */
-    align-items: center;            /* Center horizontally */
-    padding: 8px;                  /* Space around content */
-    border-radius: 8px;            /* Rounded corners */
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); /* Gradient */
-    border: 2px solid transparent;  /* Transparent border */
-    transition: all 0.3s ease;      /* Smooth transitions */
-    text-decoration: none;          /* Remove underline */
-    position: relative;             /* For positioning tooltips */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
 }
 
 .language-link:hover {
-    transform: translateY(-3px);    /* Lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Enhanced shadow */
-    border-color: #007bff;          /* Blue border on hover */
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); /* Blue gradient */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    border-color: #007bff;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
 }
 
-/* Tooltip on hover */
 .language-link:hover::after {
-    content: attr(data-tooltip);    /* Use data-tooltip attribute as content */
-    position: absolute;             /* Position absolutely */
-    bottom: -40px;                  /* Position below element */
-    left: 50%;                      /* Center horizontally */
-    transform: translateX(-50%);    /* Perfect centering */
-    background: #333;               /* Dark background */
-    color: white;                   /* White text */
-    padding: 5px 10px;              /* Space inside tooltip */
-    border-radius: 4px;             /* Rounded corners */
-    font-size: 0.8em;               /* Small text */
-    white-space: nowrap;            /* Prevent text wrapping */
-    z-index: 1000;                  /* Ensure tooltip is on top */
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 1000;
 }
 
-/* Tooltip arrow */
 .language-link:hover::before {
-    content: '';                    /* Empty content */
-    position: absolute;             /* Position absolutely */
-    bottom: -8px;                   /* Position at bottom */
-    left: 50%;                      /* Center horizontally */
-    transform: translateX(-50%);    /* Perfect centering */
-    border-width: 5px;              /* Arrow size */
-    border-style: solid;            /* Solid border */
-    border-color: transparent transparent #333 transparent; /* Triangle shape */
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #333 transparent;
 }
 
 .language-icon {
-    width: 32px;                    /* Fixed width */
-    height: 24px;                   /* Fixed height (flag ratio) */
-    border-radius: 4px;             /* Slightly rounded corners */
-    display: block;                 /* Block display */
-    object-fit: contain;              /* Maintain aspect ratio */
-    margin-bottom: 5px;             /* Space below icon */
+    width: 32px;
+    height: 24px;
+    border-radius: 4px;
+    display: block;
+    object-fit: contain;
+    margin-bottom: 5px;
 }
 
 .language-text {
-    font-size: 0.7em;               /* Small text */
-    color: #495057;                 /* Dark gray text */
-    font-weight: 600;               /* Semi-bold text */
-    text-transform: uppercase;      /* Uppercase text */
-    letter-spacing: 0.5px;          /* Space between letters */
+    font-size: 0.7em;
+    color: #495057;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/* Simple Current Language Styling */
 .language-link.current-language {
-    border: 2px solid #007bff; /* Blue border for current language */
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); /* Blue gradient background */
-    box-shadow: 0 4px 8px rgba(0,123,255,0.2); /* Subtle blue shadow */
+    border: 2px solid #007bff;
+    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    box-shadow: 0 4px 8px rgba(0,123,255,0.2);
 }
 
 .language-link.current-language .language-text {
-    color: #007bff; /* Blue text color */
-    font-weight: bold; /* Bold text for emphasis */
+    color: #007bff;
+    font-weight: bold;
 }
 
 /* Modern Contact Header Styling - UPDATED */
 .contact-header {
-    margin-bottom: 15px; /* Space below header */
-    padding: 12px; /* Internal spacing */
-    background: #2c3e50; /* Dark blue background */
-    border-radius: 8px; /* Rounded corners */
-    color: white; /* White text color */
-    position: relative; /* For pseudo-element positioning */
-    overflow: hidden; /* Hide overflow from pseudo-element */
-    z-index: 1; /* Ensure proper layering */
+    margin-bottom: 15px;
+    padding: 12px;
+    background: #2c3e50;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
 
 .contact-header::before {
-    content: '';                /* Empty pseudo-element */
-    position: absolute;         /* Position relative to header */
-    top: -50%;                  /* Position above container */
-    left: -50%;                 /* Position left of container */
-    width: 200%;                /* Double width for animation */
-    height: 200%;               /* Double height for animation */
-    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%); /* Radial gradient effect */
-    animation: pulse 4s ease-in-out infinite; /* Continuous pulse animation */
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+    animation: pulse 4s ease-in-out infinite;
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); } /* Normal size */
-    50% { transform: scale(1.1); }    /* Slightly enlarged */
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
 }
 
 .contact-content {
-    text-align: center;         /* Center align content */
+    text-align: center;
 }
 
 .contact-main {
-    display: flex;              /* Flexbox layout */
-    align-items: center;        /* Vertical center alignment */
-    justify-content: center;    /* Horizontal center alignment */
-    gap: 8px;                   /* Space between icon and text */
-    margin-bottom: 0;           /* No bottom margin */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 0;
 }
 
 .contact-icon {
-    font-size: 1.1em;           /* Icon size */
-    animation: bounce 2s ease-in-out infinite; /* Continuous bounce animation */
+    font-size: 1.1em;
+    animation: bounce 2s ease-in-out infinite;
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }  /* Normal position */
-    50% { transform: translateY(-3px); }    /* Lifted position */
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
 }
 
 .contact-title {
-    font-size: 1.1em;               /* Text size */
-    margin: 0;                      /* Remove default margins */
-    font-weight: 700 !important;    /* Bold text with high priority */
-    color: #ffffff !important;      /* White text with high priority */
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Text shadow for readability */
+    font-size: 1.1em;
+    margin: 0;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
 }
 
 .contact-subtitle {
-    font-size: 0.9em;               /* Smaller text size */
-    color: #ffffff !important;      /* White text with high priority */
-    font-weight: 400;               /* Normal font weight */
-    opacity: 0.9;                   /* Slightly transparent */
-    margin: 0;                      /* Remove default margins */
-    line-height: 1;                 /* Minimal line spacing */
+    font-size: 0.9em;
+    color: #ffffff !important;
+    font-weight: 400;
+    opacity: 0.9;
+    margin: 0;
+    line-height: 1;
 }
 
 /* Easter Egg Animation */
 .social-icon.easter-egg {
-    animation: bounce-easter-egg 2s ease-in-out infinite; /* Special bounce animation */
+    animation: bounce-easter-egg 2s ease-in-out infinite;
 }
 
 @keyframes bounce-easter-egg {
     0%, 100% {
-        transform: translateY(0) rotate(0deg); /* Normal position */
+        transform: translateY(0) rotate(0deg);
     }
     25% {
-        transform: translateY(-4px) rotate(-5deg); /* Up and left tilt */
+        transform: translateY(-4px) rotate(-5deg);
     }
     50% {
-        transform: translateY(-8px) rotate(0deg); /* Highest point */
+        transform: translateY(-8px) rotate(0deg);
     }
     75% {
-        transform: translateY(-4px) rotate(5deg); /* Down and right tilt */
+        transform: translateY(-4px) rotate(5deg);
     }
 }
-
-
 
 /* Mobile Responsive Styles for Language Section */
 @media (max-width: 600px) {
     .language-links {
-        gap: 12px;                  /* Smaller gap on mobile */
-        flex-wrap: wrap;            /* Allow wrapping on small screens */
+        gap: 12px;
+        flex-wrap: wrap;
     }
 
     .language-link {
-        padding: 8px;               /* Smaller padding on mobile */
-        flex: 0 0 auto;             /* Don't grow or shrink */
+        padding: 8px;
+        flex: 0 0 auto;
     }
 
     .language-icon {
-        width: 30px;                /* Smaller icons on mobile */
-        height: 22px;               /* Maintain aspect ratio */
+        width: 30px;
+        height: 22px;
     }
 }
